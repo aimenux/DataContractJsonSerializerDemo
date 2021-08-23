@@ -1,3 +1,5 @@
+[![.NET](https://github.com/aimenux/DataContractJsonSerializerDemo/actions/workflows/ci.yml/badge.svg)](https://github.com/aimenux/DataContractJsonSerializerDemo/actions/workflows/ci.yml)
+
 # DataContractJsonSerializerDemo
 ```
 Implementing serialization/deserialization with data contract json serializer

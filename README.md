@@ -1,0 +1,2 @@
+# DataContractJsonSerializerDemo
+Implementing serialization/deserialization with data contract json serializer

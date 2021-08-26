@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.Serialization;
-using System.Text.Json;
 using App.Extensions;
 
 namespace App.Models.CustomSerialization
@@ -39,12 +38,6 @@ namespace App.Models.CustomSerialization
             info.AddValue(nameof(LastName), LastName);
             info.AddValue(nameof(Title), Title);
             info.AddValue(nameof(Address), Address);
-        }
-
-        public override string ToString()
-        {
-            var json = JsonSerializer.Serialize(this);
-            return json;
         }
 
         [OnSerializing]

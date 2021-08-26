@@ -27,17 +27,17 @@ namespace App
                 {
                     var employeeBefore = Factory.CreateEmployeeWithBasicSerialization();
                     var json = basicSerializer.Serialize(employeeBefore);
-                    employeeBefore.WriteLine("Basic serialization done");
+                    employeeBefore.Dump("Basic json serialization done");
                     var employeeAfter = basicSerializer.Deserialize(json);
-                    employeeAfter.WriteLine("Basic deserialization done");
+                    employeeAfter.Dump("Basic json deserialization done");
                 });
                 targets.Add(TargetTypes.CustomSerialization, () =>
                 {
                     var employeeBefore = Factory.CreateEmployeeWithCustomSerialization();
                     var json = customSerializer.Serialize(employeeBefore);
-                    employeeBefore.WriteLine("Custom serialization done");
+                    employeeBefore.Dump("Custom json serialization done");
                     var employeeAfter = customSerializer.Deserialize(json);
-                    employeeAfter.WriteLine("Custom deserialization done");
+                    employeeAfter.Dump("Custom json deserialization done");
                 });
                 targets.Add(TargetTypes.Default, dependsOn: new List<string>
                 {

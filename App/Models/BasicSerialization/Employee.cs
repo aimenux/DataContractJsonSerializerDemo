@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text.Json;
 
 namespace App.Models.BasicSerialization
 {
@@ -15,11 +14,5 @@ namespace App.Models.BasicSerialization
         public string Title { get; set; }
 
         public Address Address { get; set; }
-
-        public override string ToString()
-        {
-            var json = JsonSerializer.Serialize(this);
-            return json;
-        }
     }
 }
